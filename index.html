@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Minimal, modern product guides and reviews with Amazon affiliate recommendations." />
+  <meta name="theme-color" content="#111111" />
+  <title>Modern Finds | Product Guides & Reviews</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Modern Finds home">
+        <span class="brand-mark">MF</span>
+        <span>Modern Finds</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="siteNav">
+        <a href="#latest">Latest</a>
+        <a href="#categories">Categories</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">SMARTER SHOPPING</p>
+          <h1>Useful products.<br /><em>Better decisions.</em></h1>
+          <p class="hero-text">
+            Straightforward product guides, practical reviews, and carefully selected Amazon recommendations.
+          </p>
+          <a class="button button-dark" href="#latest">Explore the latest</a>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="hero-card hero-card-back"></div>
+          <div class="hero-card hero-card-front">
+            <div class="hero-card-kicker">EDITOR'S PICK</div>
+            <div class="hero-card-line"></div>
+            <div class="hero-card-line short"></div>
+            <div class="hero-card-dot"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="latest">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">LATEST POSTS</p>
+            <h2>Fresh recommendations</h2>
+          </div>
+          <div class="search-wrap">
+            <label class="sr-only" for="postSearch">Search posts</label>
+            <input id="postSearch" type="search" placeholder="Search posts..." autocomplete="off" />
+          </div>
+        </div>
+
+        <div id="categoryBar" class="category-bar" aria-label="Filter posts by category"></div>
+        <div id="postGrid" class="post-grid"></div>
+        <p id="emptyState" class="empty-state" hidden>No posts match your search.</p>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="categories">
+      <div class="container category-section">
+        <div>
+          <p class="eyebrow">CATEGORIES</p>
+          <h2>Browse by interest</h2>
+          <p class="muted">Organize your content around the areas your readers care about most.</p>
+        </div>
+        <div class="category-list" id="categoryLinks"></div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">ABOUT</p>
+          <h2>Curated, simple, useful.</h2>
+        </div>
+        <div>
+          <p class="about-copy">
+            Modern Finds is a lightweight publishing template for product-focused content.
+            Keep the design clean, add your own articles, and send readers to your preferred Amazon listings.
+          </p>
+          <p class="affiliate-note">
+            <strong>Affiliate disclosure:</strong> Some links on this site may be affiliate links.
+            If you purchase through one of those links, we may earn a commission at no additional cost to you.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <span>© <span id="year"></span> Modern Finds</span>
+      <span>Built for simple publishing.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
